@@ -8,7 +8,7 @@
 //
 import UIKit
 
-class ImageViewCVCell: UICollectionViewCell {
+class ImageViewCVCell: UICollectionViewCell {                 //got to know about this class from stackoverflow.
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,7 +25,7 @@ class ImageViewCVCell: UICollectionViewCell {
         }
     }
     
-    func setupViews() {
+    func setupViews() {                     // google how to setuo the views #swift docs
         self.addSubview(imgV)
         imgV.leftAnchor.constraint(equalTo: self.leftAnchor).isActive=true
         imgV.topAnchor.constraint(equalTo: self.topAnchor).isActive=true
@@ -48,7 +48,7 @@ class ImageViewCVCell: UICollectionViewCell {
         return v
     }()
     
-    let border: UIView = {
+    let border: UIView = {              //stackoverflow.
         let v=UIView()
         v.backgroundColor = UIColor.clear
         v.layer.borderColor = UIColor(red: 230/255, green: 249/255, blue: 250/255, alpha: 0.7).cgColor
@@ -58,7 +58,7 @@ class ImageViewCVCell: UICollectionViewCell {
     }()
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) is not implemented")
+        fatalError("init(coder:) implementation is not active")
     }
 }
 

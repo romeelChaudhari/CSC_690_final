@@ -32,7 +32,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         setupViews()
     }
     
-    @objc func btnSwapAction() {
+    @objc func btnSwapAction() {        // basic logic from youtube
         guard let start = firstIPath, let end = secondIPath else { return }
         myCollectionView.performBatchUpdates({
             myCollectionView.moveItem(at: start, to: end)
@@ -99,7 +99,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     {
         exit(0)
     }
-
+// helped from stackoverflow, friend and swift docs
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 9
     }
@@ -138,7 +138,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return CGSize(width: width/3, height: width/3)
     }
     
-    func setupViews() {
+    func setupViews() {         // swift docs
         myCollectionView.delegate=self
         myCollectionView.dataSource=self
         myCollectionView.register(ImageViewCVCell.self, forCellWithReuseIdentifier: "Cell")

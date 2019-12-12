@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         sleep(2);
         return true
         }
+     // needful functions stackoverflow.
 
     func applicationWillResignActive(_ application: UIApplication) {
 
