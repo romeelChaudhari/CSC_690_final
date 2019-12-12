@@ -5,6 +5,7 @@ Must have features-
 1] This is a game I am creating from scratch so my basic goal is to have a puzzle working with given commands. 
 2] A good attractive looking UI.
 3] Easy Exit point for the application.
+4] Logo for the APP
 
 Nice to have features
 1] Ability to select random images form the local machine.
