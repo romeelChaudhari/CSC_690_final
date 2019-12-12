@@ -8,8 +8,10 @@
 //
 import UIKit
 
-class ImageViewCVCell: UICollectionViewCell {                 //got to know about this class from stackoverflow.
+class ImageViewCVCell: UICollectionViewCell {                 //got to know about this class from stackoverflow and apple develepor forum.
+    //The image view of the table cell.
     
+    //Returns the image view (UIImageView object) of the table view, which initially has no image set. If an image is set, it appears on the left side of the cell, before any label. UITableViewCell creates the image-view object when you create the cell.
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()

@@ -8,11 +8,11 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {      //inheritance superclasses
     
 
     
-    var win: UIWindow?
+    var win: UIWindow?  //Nil-Coalescing Operator
 
 //Launch
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let nav1 = UINavigationController()
             let View = ViewController()
             nav1.viewControllers = [View]
-            win.rootViewController = nav1
+            win.rootViewController = nav1         //The root view controller provides the content view of the window. Assigning a view controller to this property (either programmatically or using Interface Builder) installs the view controller’s view as the content view of the window.
             win.makeKeyAndVisible()
         }
         sleep(2);
@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
      // needful functions stackoverflow.
 
+    //In iOS, a delegate is a class that does something on behalf of another class, and the AppDelegate is a place to handle special UIApplication states. It has a bunch of functions called by iOS.
     func applicationWillResignActive(_ application: UIApplication) {
 
     }

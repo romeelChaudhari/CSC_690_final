@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 {
     
-    
+    //An object that manages an ordered collection of data items and presents them using customizable layouts.
     let questionIArray = [#imageLiteral(resourceName: "Layer 1"), #imageLiteral(resourceName: "Layer 3"), #imageLiteral(resourceName: "Layer 6"), #imageLiteral(resourceName: "Layer 4"), #imageLiteral(resourceName: "Layer 5"), #imageLiteral(resourceName: "Layer 7"), #imageLiteral(resourceName: "Layer 8"), #imageLiteral(resourceName: "Layer 10"), #imageLiteral(resourceName: "Layer 9")]
     let cAns = [0,3,1,4,2,5,6,8,7]
     var wAns = Array(0..<9)
@@ -99,7 +99,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     {
         exit(0)
     }
-// helped from stackoverflow, friend and swift docs
+// got helped from stackoverflow, friend and swift docs
+    
+    //When adding a collection view to your user interface, your app’s main job is to manage the data associated with that collection view. The collection view gets its data from the data source object, which is an object that conforms to the UICollectionViewDataSource Protocol and is provided by your app.
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 9
     }
